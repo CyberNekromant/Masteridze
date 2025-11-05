@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.repairapp">
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:allowBackup"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.RepairApp">
+
+        <!-- Главная активность (запускается при открытии приложения) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Активность создания заявки -->
+        <activity
+            android:name=".CreateRequestActivity"
+            android:exported="false" />
+
+        <!-- Активность статистики -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false" />
+
+        <!-- Активность редактирования заявки -->
+        <activity
+            android:name=".EditRequestActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

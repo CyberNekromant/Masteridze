@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="request_types">
+        <item>Ремонт бытовой техники</item>
+        <item>Ремонт компьютеров</item>
+        <item>Вызов мастера на дом</item>
+    </string-array>
+</resources>
